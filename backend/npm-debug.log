@@ -1,0 +1,45 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   '--json',
+1 verbose cli   'express',
+1 verbose cli   'description',
+1 verbose cli   'dist-tags.latest',
+1 verbose cli   'homepage' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly mapToRegistry name express
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry uri https://registry.npmjs.org/express
+8 verbose request uri https://registry.npmjs.org/express
+9 verbose request no auth needed
+10 info attempt registry request try #1 at 21:52:45
+11 verbose request id c84190c5b6429d67
+12 http request GET https://registry.npmjs.org/express
+13 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+14 info attempt registry request try #2 at 21:53:05
+15 http request GET https://registry.npmjs.org/express
+16 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+17 info attempt registry request try #3 at 21:54:15
+18 http request GET https://registry.npmjs.org/express
+19 verbose stack Error: getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+19 verbose stack     at errnoException (dns.js:50:10)
+19 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:92:26)
+20 verbose cwd /home/marcelo/Documentos/semanaomnistack08/aulas/backend
+21 error Linux 4.15.0-66-generic
+22 error argv "/usr/bin/node" "/usr/bin/npm" "view" "--json" "express" "description" "dist-tags.latest" "homepage"
+23 error node v8.10.0
+24 error npm  v3.5.2
+25 error code ENOTFOUND
+26 error errno ENOTFOUND
+27 error syscall getaddrinfo
+28 error network getaddrinfo ENOTFOUND registry.npmjs.org registry.npmjs.org:443
+29 error network This is most likely not a problem with npm itself
+29 error network and is related to network connectivity.
+29 error network In most cases you are behind a proxy or have bad network settings.
+29 error network
+29 error network If you are behind a proxy, please make sure that the
+29 error network 'proxy' config is set properly.  See: 'npm help config'
+30 verbose exit [ 1, true ]
